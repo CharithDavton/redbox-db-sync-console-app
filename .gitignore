@@ -1,0 +1,385 @@
+# ============================================
+# .NET 8 Console Application - .gitignore
+# SQL Server Sync Project
+# ============================================
+
+# ====================
+# Build Outputs
+# ====================
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# ====================
+# Visual Studio
+# ====================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+*.sln.iml
+
+# ====================
+# Build Results
+# ====================
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# ====================
+# .NET Core / .NET 8
+# ====================
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# NuGet Symbol Packages
+*.snupkg
+
+# ====================
+# Test Results
+# ====================
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+
+# ====================
+# Application Specific
+# ====================
+
+# Log Files - Important!
+logs/
+*.log
+sync_*.txt
+
+# Sensitive Configuration - CRITICAL!
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
+SyncConfig.json
+!SyncConfig.example.json
+
+# Keep example configs
+!appsettings.example.json
+!SyncConfig.example.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*_backup_*
+
+# ====================
+# OS Generated
+# ====================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux
+*~
+.directory
+
+# ====================
+# Temporary Files
+# ====================
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+
+# ====================
+# Publishing
+# ====================
+publish/
+PublishProfiles/
+*.Publish.xml
+*.pubxml
+*.publishproj
+
+# ====================
+# ReSharper
+# ====================
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ====================
+# TeamCity
+# ====================
+_TeamCity*
+
+# ====================
+# DotCover
+# ====================
+*.dotCover
+
+# ====================
+# NCrunch
+# ====================
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# ====================
+# Web Workbench
+# ====================
+.sass-cache/
+
+# ====================
+# Installshield
+# ====================
+[Ee]xpress/
+[Ss]ingle[Ii]mage/
+
+# ====================
+# DocProject
+# ====================
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# ====================
+# Click-Once
+# ====================
+publish/
+
+# ====================
+# Publish Web Output
+# ====================
+*.[Pp]ublish.xml
+*.azurePubxml
+
+# ====================
+# Microsoft Azure
+# ====================
+*.cspkg
+*.Cache
+ServiceConfiguration.Cloud.cscfg
+ServiceConfiguration.Local.cscfg
+
+# ====================
+# Node.js
+# ====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ====================
+# Rider
+# ====================
+.idea/
+
+# ====================
+# User-specific files
+# ====================
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ====================
+# Mono Auto Generated Files
+# ====================
+mono_crash.*
+
+# ====================
+# Windows Installer files
+# ====================
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# ====================
+# JetBrains Rider
+# ====================
+.idea/
+*.sln.iml
+
+# ====================
+# Azure Stream Analytics
+# ====================
+ASALocalRun/
+
+# ====================
+# MSTest test Results
+# ====================
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# ====================
+# NUNIT
+# ====================
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# ====================
+# Code Coverage Results
+# ====================
+*.coverage
+*.coveragexml
+
+# ====================
+# Visual Studio Code
+# ====================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ====================
+# Local History
+# ====================
+.localhistory/
+
+# ====================
+# BeatPulse healthcheck temp database
+# ====================
+healthchecksdb
+
+# ====================
+# Backup folder for Package Reference Convert tool
+# ====================
+MigrationBackup/
+
+# ====================
+# Ionide (F#) and Fody
+# ====================
+.ionide/
+FodyWeavers.xsd
+
+# ====================
+# JetBrains Rider
+# ====================
+.idea/
+*.sln.iml
+
+# ====================
+# Custom: SQL Server Sync Specific
+# ====================
+
+# Exclude production configuration files
+appsettings.Production.json
+appsettings.Development.json
+appsettings.Staging.json
+
+# Exclude connection string files
+connectionstrings.json
+secrets.json
+
+# Exclude any files with passwords
+*password*.txt
+*credentials*.txt
+*secret*.txt
+
+# Sync logs from PowerShell version
+sync_log_*.txt
+
+# Task scheduler exports
+*.xml
+
+# Local testing files
+test_*.json
+local_*.json
+
+# Documentation build outputs
+_site/
+.jekyll-cache/
+
+# ====================
+# Keep These Files!
+# ====================
+
+# Keep example/template configs
+!appsettings.example.json
+!SyncConfig.example.json
+!connectionstrings.example.json
+
+# Keep README and documentation
+!README*.md
+!*.md
+
+# Keep build scripts
+!build.bat
+!publish.bat
+!*.ps1
+
+# Keep project files
+!*.csproj
+!*.sln
+
+# Keep source code
+!*.cs
